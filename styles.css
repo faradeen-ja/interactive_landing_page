@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+
+
+
+/* ---- Body ---- */
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* Navigation Styles*/
+
+.navbar__menu {
+    background-color: #fff;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s ease-in-out;
+
+
+}
+
+.navbar__menu>a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #43121d;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.navbar__menu>a>img {
+    width: 50px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header>a {
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+    margin: 5px;
+    color: rgb(168, 45, 73);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+
+    font-size: 20px;
+
+}
+
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s ease-in-out;
+
+
+}
+
+.navbar__menu li {
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.navbar__menu .menu__link {
+    color: rgb(168, 45, 73);
+    text-decoration: none;
+    height: 20px;
+    padding: 5px;
+    list-style: none;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+.navbar__menu .menu__link:hover {
+    background: #a82d49;
+    border-radius: 5px;
+    color: #fff;
+    transition: ease 0.3s all;
+    height: 30px;
+}
+
+.navbar__menu .active {
+    margin-left: 1px;
+    cursor: pointer;
+    display: inline-block;
+
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 8px;
+    border-radius: 5px;
+    padding-right: 8px;
+    font-weight: bold;
+    text-decoration: none;
+
+    background: #a82d49;
+    color: #fff;
+    transition: ease 0.3s all;
+
+}
+
+.menu_toggle {
+    display: none;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+}
+
+.menu_toggle .bar {
+    display: block;
+    color: black;
+    font-size: 30px;
+}
+
+.menu_toggle .cross {
+    display: none;
+    color: black;
+    font-size: 30px;
+}
+
+
+
+/* Header Styles */
+.main__hero {
+    background: url('./../imgs/3.jpg') center center;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.main__hero>.hero_item {
+    width: 450px;
+    margin-left: 30px;
+}
+
+.hero_item>h3 {
+    color: #43121d;
+    font-size: 40px;
+    margin: 0px 0px 25px;
+
+}
+
+.hero_item>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    padding: 0 0 13px;
+}
+
+.hero_item>button {
+    background: #a82d49;
+    border: 3px solid #a82d49;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 11px 28px;
+    border: none;
+    border-radius: 0px;
+    font-family: Roboto;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.hero_item>button:hover {
+    outline: 0;
+    text-decoration: none;
+    color: #a82d49;
+    border: 1px solid #a82d49;
+    background-color: #fff;
+
+}
+
+
+/* Counting Section List */
+.counting_orders {
+    width: 100%;
+    height: 220px;
+    background-color: #a82d49;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.states_info {
+    margin: 20px;
+}
+
+.states_info>h1 {
+    font-size: 30px;
+}
+
+
+.counting_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    padding: 40px;
+
+}
+
+.counting_cards>.card {
+    width: 50%;
+}
+
+.counting_cards>.card>.image_card {
+    width: 100%;
+    height: 100%;
+}
+
+
+.counting_cards>.card_detail {
+    width: 50%;
+    padding: 50px;
+}
+
+.counting_cards>.card_detail>h2 {
+    font-size: 28px;
+    line-height: 45px;
+    color: #43121d;
+    font-weight: 700;
+}
+
+.counting_cards>.card_detail>p {
+    font-size: 16px;
+    color: #555;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.counting_cards>.card_detail>button {
+    background: #a82d49;
+    border: 3px solid #a82d49;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 11px 28px;
+    border: none;
+    border-radius: 0px;
+    font-family: Roboto;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.counting_cards>.card_detail>button:hover {
+    outline: 0;
+    text-decoration: none;
+    color: #a82d49;
+    border: 1px solid #a82d49;
+    background-color: #fff;
+
+}
+
+
+
+
+
+/* About Section */
+
+.about_section {
+    background: url('./../imgs/about.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 20px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_section .section_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.about_section .section_detail>h1 {
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.8px;
+    color: #a82d49;
+    padding-top: 40px;
+    font-size: 36px;
+    text-align: center;
+    width: 60%;
+
+}
+
+.about_section .section_detail>p {
+    
+    padding-top: 20px;
+    font-size: 18px;
+    color: #222;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.5px;
+    width: 70%;
+    text-align: center;
+}
+
+.about_section .section_detail>a {
+    text-decoration: none;
+
+}
+
+.about_section .section_detail>a:hover {
+    color: #a82d49;
+}
+
+
+
+
+
+
+/* Explore Our Food */
+.explore {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.explore>h1 {
+    text-align: center;
+    color: #43121d;
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+.explore>p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.5px;
+    width: 60%;
+}
+
+.food_cards {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+
+}
+
+.food_cards>.food_detail {
+    width: 300px;
+    height: 400px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+
+
+
+}
+
+.food_cards>.food_detail>.food_image {
+    width: 100%;
+    height: 50%;
+}
+
+.food_cards>.food_detail>.food_image>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.food_cards>.food_detail>.food_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.food_cards>.food_detail>.food_info>h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+.food_cards>.food_detail>.food_info>p {
+    color: #a82d49;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+.food_cards>.food_detail>.food_info>button {
+    background: #a82d49;
+    border: 3px solid #a82d49;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 11px 28px;
+    border: none;
+    border-radius: 0px;
+    font-family: Roboto;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.food_cards>.food_detail>.food_info>button:hover {
+    background-color: #fff;
+    color: #a82d49;
+    border: 1px solid #a82d49;
+}
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background: #000;
+    padding: 3em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer>div>i {
+    margin-left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer>div>i:hover {
+    color: #a82d49;
+}
+
+
+
+
+
+/* Scroll Button  */
+.scroll_to_top {
+    height: 60px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.scroll_to_top>i {
+    color: #43121d;
+    font-size: 40px;
+}
+
+.scroll_to_top:hover {
+    cursor: pointer;
+}
+
+
+/*                      Responsive Mobile View and Tab viewed                   */
+
+@media(max-width: 770px) {
+
+
+
+    .navbar__menu ul {
+        display: none;
+    }
+
+    .navbar_active.navbar__menu ul {
+        position: absolute;
+        width: 100%;
+        height: 170px;
+        top: 50px;
+        display: block;
+        background-color: #fff;
+        cursor: pointer;
+
+    }
+
+    .navbar__menu .menu__link:hover {
+        background-color: #fff;
+        color: #a82d49;
+    }
+
+    .navbar_active.navbar__menu .bar {
+        display: none;
+    }
+
+    .navbar_active.navbar__menu .cross {
+        display: block;
+    }
+
+    .menu_toggle {
+        display: block;
+    }
+
+
+    .navbar__menu li {
+        text-transform: uppercase;
+        font-size: 15px;
+
+    }
+
+    .main__hero>.hero_item {
+        width: 100%;
+    }
+
+    .counting_orders {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .counting_cards {
+        flex-direction: column;
+    }
+
+    .counting_cards>.card {
+        width: 100%;
+    }
+
+    .counting_cards>.card_detail {
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .about_section .section_detail>h1 {
+
+
+        font-size: 25px;
+        width: 80%;
+
+    }
+
+    .about_section .section_detail>p {
+        width: 80%;
+    }
+
+}

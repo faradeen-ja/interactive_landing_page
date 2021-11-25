@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Course Assign</title>
+
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+
+
+  <header class="header">
+
+
+
+    <!-- Dynamic navbar -->
+    <nav class="navbar__menu ">
+      <a href="#"><img src="logo3-removebg-preview.png" alt=""></a>
+      <ul id="navbar__list"></ul>
+      <div class="menu_toggle ">
+        <i class="fa-solid fa-bars bar"></i>
+        <i class="fa-solid fa-xmark cross"></i>
+      </div>
+
+
+
+    </nav>
+  </header>
+
+
+  <!-- 
+  Each section has unique id and we target this id by using loop in jaavscript then we scroll down
+ -->
+
+ <main id="main">
+
+    <!-- Hero Section -->
+    <header id="section1" class="main__hero">
+
+      <div class="hero_item">
+        <h3>Good food choices are good investments.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quod ad obcaecati asperiores dolores odit
+          maxime ut porro omnis fugit dolor quis, expedita vitae, illo doloremque veritatis, commodi odio saepe!</p>
+        <button>Order Now</button>
+      </div>
+
+    </header>
+   
+
+
+<!-- Counting Section -->
+    <section data-nav="Section 1" class="your-active-class  counting_section">
+      <div class="counting_orders">
+        <div class="states_info">
+          <h1>585+</h1>
+          <p>Photos</p>
+        </div>
+        <div class="states_info">
+          <h1>684+</h1>
+          <p>Dish</p>
+        </div>
+        <div class="states_info">
+          <h1>938+</h1>
+          <p>Order</p>
+        </div>
+      </div>
+
+
+
+   
+      <div id="section2" data-nav="Section 2" class="counting_cards">
+        <div class="card">
+          <img src="cards.png" alt="" class="image_card">
+        </div>
+        <div class="card_detail">
+          <h2>We pride ourselves on making real food from the best ingredients.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et quas eligendi voluptatem velit dolores
+            quod similique accusamus odit, ipsum nesciunt sequi dolorum libero reprehenderit voluptates quaerat
+            provident commodi reiciendis?</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+
+
+
+<!-- About Section -->
+    <section id="section3" data-nav="Section 3" class="about_section">
+      <div class="section_detail">
+        <h1>
+          When a man's stomach is full it makes no
+          difference whether he is rich or poor.
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio
+          finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+
+        <a href="#"> <i class="fa-solid fa-play"></i>Watch Story</a>
+      </div>
+
+    </section>
+
+
+
+
+
+    <!-- Explore Food Section -->
+    <section id="section4" class="explore">
+      <h1>Explore Our Foods</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet
+        leo. Mauris feugiat erat tellus. Far far away, behind the word mountains, far from the countries Vokalia and
+        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+
+      <div class="food_cards">
+
+        <div class="food_detail">
+
+          <div class="food_image">
+            <img src="chips.jpg" alt="">
+          </div>
+
+          <div class="food_info">
+            <h2>Rainbow Vegetable Sandwich</h2>
+            <p>$10.50</p>
+            <button>Order Now</button>
+
+          </div>
+
+        </div>
+        <div class="food_detail">
+
+          <div class="food_image">
+            <img src="plate.jpg" alt="">
+          </div>
+
+          <div class="food_info">
+            <h2>Sandwitch Extra</h2>
+            <p>$15.50</p>
+            <button>Order Now</button>
+
+          </div>
+
+        </div>
+        <div class="food_detail">
+
+          <div class="food_image">
+            <img src="cards.png" alt="">
+          </div>
+
+          <div class="food_info">
+            <h2>Spicy Chips</h2>
+            <p>$24</p>
+            <button>Order Now</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+  </main>
+
+
+
+<!-- Scroll to top section in position absolute -->
+  <div src="scroll_to_top_png.png" alt="" class="scroll_to_top" id="scroll_to_top_img">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
