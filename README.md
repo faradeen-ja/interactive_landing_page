@@ -1,2 +1,2 @@
 # interactive_landing_page
- Udacity projects
+ Udacity NANO projects
