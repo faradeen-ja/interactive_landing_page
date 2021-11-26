@@ -24,8 +24,7 @@ document.getElementById('scroll_to_top_img').onclick=function()
 
 
 
-
-//          Creating Navbar by using dynamic method                   //
+//          Creating Navbar by using dynamic method here                   //
 
 let total_section=0;
 
