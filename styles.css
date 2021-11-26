@@ -15,7 +15,6 @@ body {
 
 
 
-
 /* Navigation Styles*/
 
 .navbar__menu {
@@ -152,7 +151,6 @@ body {
 }
 
 
-
 /* Header Styles */
 .main__hero {
     background: url('./../imgs/3.jpg') center center;
@@ -199,7 +197,7 @@ body {
     font-family: Roboto;
     box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
     cursor: pointer;
-    transition: .4s;
+    transition: .5s;
 }
 
 .hero_item>button:hover {
