@@ -1,4 +1,4 @@
-
+// Udacity Weather Journal App 
 // Globally Variable
 var header = document.querySelector('.header')
 var menu_toggle = document.querySelector('.menu_toggle')
