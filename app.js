@@ -1,6 +1,6 @@
 // Globally Variable
 // Udacity Nano Degree Program
-
+// Final Review 
 const header = document.querySelector('.header')
 const menu_toggle = document.querySelector('.menu_toggle')
 const cross= document.querySelector('.cross')
