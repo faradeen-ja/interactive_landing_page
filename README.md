@@ -31,7 +31,7 @@ Hover effects, toggle menu, social media links
 
 ## My process
 
-I used HTML CSS and JS to prepare this design without any figma or jpeg files (Part of the Udacity Nano Degree Program 2020)
+I used HTML CSS and JS to prepare this design without any figma or jpeg files (Part of the Udacity Nano Degree Program)
 
 ### Built with
 
@@ -53,4 +53,4 @@ I used HTML CSS and JS to prepare this design without any figma or jpeg files (P
 ## Acknowledgments
 
 UDACITY  - Myself-taught skills and the web
-I belive everyone has the potential to achieve anything in life, it's only a matter of putting it into effect, action and doing it. I call it self-discovery. 
+I belive everyone has the potential to achieve anything in life, it's only a matter of putting it into work, action and doing it. I call it self-discovery. 
